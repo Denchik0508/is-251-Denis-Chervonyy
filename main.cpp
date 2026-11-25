@@ -5,9 +5,12 @@ using namespace std;
 
 int main()
 {
-    double a,b,y;
-    a= 1.5; b= 1.2;
-    y = sqrt (a*a-2*a*b+b*b)/(b*b);
-    cout<<"Result="<<y;
-    getch();
+    double x,y;
+    cout <<"Vvedite koordinate x and y: ";
+    cin >> x >> y;
+    if ((x >= 0 && y <= 5) && (y >= -5) && (y <= -sqrt(x * x + 16)))
+    cout <<"Point belongs to the area";
+    else
+    cout <<"Point does not belong to the area";
+     getch();
 }
